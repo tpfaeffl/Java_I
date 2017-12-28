@@ -1,0 +1,75 @@
+Please enter an integer value between 1 and 5: 4
+The value you entered is 4, which means division.
+Enter two floats values separated by a space: 
+12.0 0
+Float values that were entered are: 12.0 and0.0
+Use the division operation.
+
+You cannot divide by zero(0). You must enter your floats again. 
+
+ 
+
+Enter two floats values separated by a space: 
+12.0 3
+The result of your division operation is:         0.00
+
+Press "ENTER" key to continue.
+
+Welcome to Tom Pfaeffle's Handy Calculator
+
+	1. Addition
+	2. Subtraction
+	3. Multiplication
+	4. Division
+	5.Exit
+
+
+Please enter an integer value between 1 and 5: 4
+The value you entered is 4, which means division.
+Enter two floats values separated by a space: 
+1
+
+
+
+
+-------------------------------------
+while (i <= iteration-1)  {	
+		//	System.out.print("made it this far ");
+			array[iteration-i-1] = i; 
+			System.out.print(array[iteration-i-1] );
+			i= i+1;
+		}
+
+
+
+-------------------------------------------------------- This works sort of
+public static int getUserChoice(Scanner rI) {
+		
+		
+		do { // Loop until we have correct input
+			int inputNumber = 0;
+			try {
+			// waits for user input
+			
+				inputNumber = Integer.parseInt(rI.next());
+			} 
+
+			catch (NumberFormatException e) {
+			//	System.out.println("Input was not an integer. Try again.");
+				rI.nextLine();
+				
+			
+			}
+			if (inputNumber < 1 || inputNumber > 5) {
+				System.out.println("You did not enter an integer between 1 and 5. Try again.\n");
+				rI.nextLine();
+				
+			}
+			else {
+			// System.out.println("Your input value is good. ");
+			return inputNumber;}
+			
+		} while (true);			
+		
+	}
+	

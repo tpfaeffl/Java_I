@@ -1,0 +1,72 @@
+if (intLength != CORRECT_LENGTH) {
+			System.out.println(testSsNumber + " Not a valid Social Security number. Try again.");
+			System.exit(0);
+		}
+		
+		for (int i =0; i <=2; i++) {
+			if (Character.isDigit(testSsNumber.charAt(i))){
+				continue;
+			}
+				else {
+					System.out.println(testSsNumber + " is NOT a valid Social Security number.");
+					System.exit(0);
+				}
+			}
+		
+		for (int i= 3; ; ) {
+			if (testSsNumber.charAt(i) == '-') {
+				continue;
+			}
+				else {
+					System.out.println(testSsNumber + " is NOT a valid Social Security number.");	
+					System.exit(0);	
+				}
+			}
+	
+		
+		for (int i = 4 ; i <= 5; i++) {
+			if (Character.isDigit(testSsNumber.charAt(i))) {
+			continue;
+			}
+			else { 
+				System.out.println(testSsNumber + " is NOT a valid Social Security number.");	
+				System.exit(0);
+			}
+		}
+		
+		for (int i = 6 ; i <= 10; i++) {
+			if (Character.isDigit(testSsNumber.charAt(i))) {
+				continue;
+			}
+			else {
+				System.out.println(testSsNumber + " is NOT a valid Social Security number.");
+			}
+		}
+		
+		
+/*
+
+for (int i = 0; i <= CORRECT_LENGTH -1; i++) {
+	if (Character.isDigit(testSsNumber.charAt(i)) || (testSsNumber.charAt(i) == '-')) {
+		System.out.println(testSsNumber + " is a valid Social Security number.");}
+	else
+		System.out.println(testSsNumber + " is NOT a valid Social Security number.");}
+		
+		
+*/			
+		
+/*				
+		
+		
+	//	System.out.print(testSsNumber.charAt(i));
+		continue;
+	else if (testSsNumber.charAt(i) == '-') 
+	//	System.out.print(testSsNumber.charAt(i));
+		continue;
+	else
+		System.out.println(SsNumber + " is not a valid Social Security number. Try again.");
+		System.exit(0);
+}
+
+System.out.println(testSsNumber + " is a valid Social Security number.");
+*/	
